@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
 }
 
 body{
@@ -58,8 +58,36 @@ input{
 }
 
 #message-ref{
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
   margin-top: 1.5em;
   color: #1d9e1d;
   visibility: hidden;
+}
+
+
+@media only screen and (max-width: 508px) {
+  .container{
+    width: 25em;
+    padding: 1em 2.5em;
+  }
+
+  #message-ref{
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 397px) {
+  .container{
+    width: 20em;
+    padding: 1em 2.5em;
+  }
+
+  #message-ref{
+    font-weight: normal;
+    font-size: 1em;
+  }
+
 }
